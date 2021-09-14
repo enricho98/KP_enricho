@@ -1,3 +1,4 @@
+<link rel="icon" href="/img/polnep.png" type="image/icon type">
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -11,6 +12,10 @@
                 @livewire('profile.update-profile-information-form')
 
                 <x-jet-section-border />
+
+               
+
+            
             @endif
 
             @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updatePasswords()))
@@ -29,9 +34,7 @@
                 <x-jet-section-border />
             @endif
 
-            <div class="mt-10 sm:mt-0">
-                @livewire('profile.logout-other-browser-sessions-form')
-            </div>
+
 
             @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
                 <x-jet-section-border />
@@ -40,6 +43,13 @@
                     @livewire('profile.delete-user-form')
                 </div>
             @endif
+
+            @livewire('profile.profile-contact-information-form')
+            <x-jet-section-border />
+            <div class="mt-10 sm:mt-0">
+            @livewire('profile.sosmed')
+                </div>
+            
         </div>
     </div>
 </x-app-layout>

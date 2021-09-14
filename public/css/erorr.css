@@ -1,0 +1,10 @@
+
+@-webkit-keyframes message__title {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #51fdef, 0 0 40px #a8ffa0, 0 0 50px #a8ffa0, 0 0 60px #a8ffa0, 0 0 70px #a8ffa0;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #01e0fd, 0 0 40px #01e0fd, 0 0 50px #01e0fd, 0 0 60px #01e0fd, 0 0 70px #01e0fd, 0 0 80px #01e0fd;
+  }
+}

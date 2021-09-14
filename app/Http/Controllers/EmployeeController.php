@@ -10,19 +10,6 @@ use App\Imports\EmployeeImport;
 
 class EmployeeController extends Controller
 {
-    public function addEmployee()
-    {
-        $employees=[
-          ["name"=>"Alice","email"=>"alice@gmail.com","phone"=>"081257987678","salary"=>"200000","department"=>"Accounting"],  
-          ["name"=>"Andrew","email"=>"andrew@gmail.com","phone"=>"081257987678","salary"=>"200000","department"=>"Accounting"],
-          ["name"=>"Mike","email"=>"mike@gmail.com","phone"=>"081257987678","salary"=>"200000","department"=>"Accounting"],
-          ["name"=>"James","email"=>"james@gmail.com","phone"=>"081257987678","salary"=>"200000","department"=>"Accounting"],
-          ["name"=>"Sophie","email"=>"sophie@gmail.com","phone"=>"081257987678","salary"=>"200000","department"=>"Accounting"],
-
-        ];
-        Employee::insert($employees);
-        return "Records are inserted";
-    }
 
     public function exportIntoExcel()
     {
